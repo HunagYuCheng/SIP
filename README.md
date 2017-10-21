@@ -1,3 +1,4 @@
-# SIP
+# openHAB 2 Add-ons
 SIP for openHAB Binding
-First register
+
+1. Register is finished
