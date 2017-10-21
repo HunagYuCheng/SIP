@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="sip"
+						  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+						  xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+						  xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+
+	<!-- SipRegistar Binding -->
+    <thing-type id="registar">
+        <label>SIP Binding Thing</label>
+        <description>Thing for SIP Binding</description>
+
+        <channels>
+            <channel id="sent" typeId="sent"/>
+        </channels>
+        
+        <config-description>
+            <parameter name="name" type="text" required="true">
+                <label>Name</label>
+                <description>Sip registar name.
+                </description>
+            </parameter>
+        </config-description>
+    </thing-type>
+
+    <!-- Sample Channel Type -->
+    <channel-type id="sent">
+        <item-type>switch</item-type>
+        <label>SipRegistar Sent</label>
+        <description>Registar for sip</description>
+        <category>SipRegistar</category>
+        
+    </channel-type>
+</thing:thing-descriptions>
